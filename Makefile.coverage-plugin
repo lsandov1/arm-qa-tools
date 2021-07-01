@@ -1,0 +1,5 @@
+PVLIB_HOME=/ext/FastModels_11-12-038_Linux64/FastModelsPortfolio_11.12
+CC_DIR=coverage-tool/coverage-plugin
+
+all:
+	$(MAKE)	-C $(CC_DIR) PVLIB_HOME=$(PVLIB_HOME)
