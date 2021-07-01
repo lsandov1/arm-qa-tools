@@ -211,6 +211,8 @@ CoverageTrace::Release()
             ++map_it) {
             fprintf(fp, "%08x %lu %lu\n", map_it->first, map_it->second.cnt,
                     map_it->second.size);
+	    printf("%s %08x %lu %lu\n", fname, map_it->first, map_it->second.cnt,
+                    map_it->second.size);
         }
 
         // Close the file
